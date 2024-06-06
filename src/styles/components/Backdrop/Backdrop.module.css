@@ -1,0 +1,101 @@
+.bulbasaur {
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 0;
+    max-height: 100%;
+    height: 70%;
+    width: auto;
+
+    @media (max-width: $mantine-breakpoint-lg) {
+        left: -10%;
+    }
+
+    @media (max-width: $mantine-breakpoint-md) {
+        display: none;
+    }
+    animation: upDown 2s ease infinite;
+
+}
+@keyframes upDown {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.company {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-align: right;
+}
+
+.companyName {
+    font-size: 10rem;
+    line-height: 10rem;
+    font-weight: 600;
+    @media (max-width: $mantine-breakpoint-md) {
+        display: none;
+    }
+}
+
+.companySlogan {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-top: -0.5rem;
+    letter-spacing: -0.2rem;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        display: none;
+    }
+}
+
+.boxOne {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20rem;
+    width: 30rem;
+    background-color: var(--mantine-color-primary-5);
+    border-radius: 0 0 1.5rem 1.5rem;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        display: none;
+    }
+
+    @mixin light {
+        opacity: 0.2;
+    }
+
+    @mixin dark {
+        opacity: 0.1;
+    }
+}
+
+.boxTwo {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    height: 30rem;
+    width: 40rem;
+    background-color: var(--mantine-color-primary-5);
+    border-radius: 1.5rem 1.5rem 0 0;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        display: none;
+    }
+    @mixin light {
+        opacity: 0.2;
+    }
+
+    @mixin dark {
+        opacity: 0.1;
+    }
+}

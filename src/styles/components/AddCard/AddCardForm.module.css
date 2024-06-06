@@ -1,0 +1,9 @@
+.back {
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        & > * {
+            color: var(--mantine-color-primary-5);
+        }
+    }
+}

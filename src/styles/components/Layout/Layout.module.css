@@ -1,0 +1,50 @@
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: var(--mantine-breakpoint-xl);
+    margin: 0 auto;
+
+    &>*>* {
+        overflow: auto;
+    }
+}
+
+.sidebar {
+    width: 20%;
+
+    @media (max-width: $mantine-breakpoint-lg) {
+        width: fit-content;
+    }
+
+    @media (max-width: $mantine-breakpoint-md) {
+        display: none;
+    }
+}
+
+.page {
+    width: 80%;
+    flex-direction: column;
+
+    overflow: auto;
+    padding-bottom: 32px;
+    position: relative;
+
+    @media (max-width: $mantine-breakpoint-lg) {
+        flex: 1;
+    }
+}
+
+.pageContent {
+    border-radius: 0.5rem;
+}
+
+
+.theme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+    @media (max-width: $mantine-breakpoint-md) {
+        display: none;
+    }
+}

@@ -1,0 +1,40 @@
+.container {
+    max-width: var(--mantine-breakpoint-xl);
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    height: 100%;
+    overflow: hidden;
+
+    &[data-overflow='true'] {
+        overflow: visible;
+    }
+}
+
+.companyName {
+    background: linear-gradient(to right, var(--mantine-color-primary-5), var(--mantine-color-secondary-5) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.loader {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageContainer {
+    flex-direction: column;
+}
+
+.noData {
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    & > * {
+        font-size: 2rem;
+        color: var(--mantine-color-secondary-2);
+    }
+}

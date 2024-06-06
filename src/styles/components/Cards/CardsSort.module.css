@@ -1,0 +1,40 @@
+.container {
+    border: 1px solid var(--mantine-color-dark-4);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.title {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+}
+
+.select {
+    margin-top: 0.5rem;
+}
+
+.selectItemContainer {
+    width: 100%;
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.selectItem {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.selectItemTitle {
+    width: 50%;
+    font-size: 1rem;
+}
+.selectItemSelect {
+    font-size: 1rem;
+    width: 100%;
+}
+
+.selectItemCta {
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}

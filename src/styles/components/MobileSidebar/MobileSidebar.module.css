@@ -1,0 +1,63 @@
+.container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--mantine-color-body-border);
+    display: none;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-color-body);
+    z-index: 2;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        display: flex;
+    }
+}
+
+.company {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.companyLogo {
+    width: 2.5rem;
+    display: none;
+    @mixin light {
+        &[data-theme='light'] {
+            display: block;
+        }
+    }
+
+    @mixin dark {
+        &[data-theme='dark'] {
+            display: block;
+        }
+    }
+}
+
+.name {
+    font-weight: 600;
+    letter-spacing: -0.01rem;
+    font-size: 2rem;
+}
+
+.action {
+    align-items: center;
+    gap: 1rem;
+}
+
+.drawerTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.drawerBody {
+    height: calc(100% - 60px);
+}
+
+.drawerContainer {
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--bg-color-body);
+}

@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'CalSans';
+  src: url('/assets/fonts/CalSan/CalSans.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root[data-mantine-color-scheme=dark] {
+  --text-color: var(--mantine-color-white-0);
+  --text-input-color: var(--mantine-color-white-0);
+  --anchor-color: var(--mantine-color-primary-5);
+  --mantine-color-body: var(--mantine-color-dark-5);
+  --bg-body-primary: var(--mantine-color-secondary-9);
+  --bg-body-secondary: var(--mantine-color-dark-9);
+}
+
+:root[data-mantine-color-scheme=light] {
+  --text-color: var(--mantine-color-dark-5);
+  --text-input-color: var(--mantine-color-dark-5);
+  --anchor-color: var(--mantine-color-primary-5);
+  --bg-body-primary: var(--mantine-color-white-2);
+  --bg-body-secondary: var(--mantine-color-white-5);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  min-height: -webkit-fill-available;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'CalSans', sans-serif;
+  font-weight: 600;
+}
+
+body {
+  font-size: 16px;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(239deg, var(--bg-body-primary) , var(--bg-body-secondary));
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 80s ease infinite;
+  -moz-animation: AnimationName 80s ease infinite;
+  -o-animation: AnimationName 80s ease infinite;
+  animation: AnimationName 80s ease infinite;
+}
+
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 96%
+  }
+
+  50% {
+    background-position: 100% 5%
+  }
+
+  100% {
+    background-position: 0% 96%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 96%
+  }
+
+  50% {
+    background-position: 100% 5%
+  }
+
+  100% {
+    background-position: 0% 96%
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 96%
+  }
+
+  50% {
+    background-position: 100% 5%
+  }
+
+  100% {
+    background-position: 0% 96%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 96%
+  }
+
+  50% {
+    background-position: 100% 5%
+  }
+
+  100% {
+    background-position: 0% 96%
+  }
+}
+
+
+
+#root {
+  height: 100%;
+  min-height: 100%;
+  flex: 1;
+  width: 100%;
+  margin: auto;
+}

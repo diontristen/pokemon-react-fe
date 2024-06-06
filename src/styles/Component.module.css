@@ -1,0 +1,118 @@
+.textInput {
+    color: var(--text-input-color);
+
+    &:focus,
+    &:focus-within {
+        border-color: var(--mantine-color-primary-5);
+    }
+
+    &[readOnly] {
+        background-color: transparent;
+        border: none;
+        padding-left: 0;
+        cursor: default;
+    }
+}
+
+.dateInput {
+
+    &[data-selected] {
+        background-color: var(--mantine-color-primary-5);
+
+        &:hover {
+            background-color: var(--mantine-color-primary-5);
+        }
+    }
+}
+
+.tagsPill {
+    background-color: var(--mantine-color-primary-5);
+    color: var(--mantine-color-white-0);
+}
+
+.buttonRoot {
+    background-color: var(--mantine-color-primary-5);
+    color: var(--mantine-color-dark-5);
+    transition: all 100ms ease;
+    cursor: pointer;
+    &[data-variant='danger'] {
+        background-color: var(--mantine-color-red-5);
+    }
+
+    &[data-variant='outlined'] {
+        background-color: transparent;
+        color: var(--mantine-color-primary-5);
+        border: 1px solid var(--mantine-color-primary-5);
+    }
+
+    &:hover {
+        background-color: var(--mantine-color-primary-3);
+
+        &[data-variant='danger'] {
+            background-color: var(--mantine-color-red-3);
+        }
+
+        &[data-variant='outlined'] {
+            color: var(--mantine-color-dark-5);
+        }
+    }
+}
+
+.anchor {
+    color: var(--anchor-color);
+    transition: all 100ms ease;
+
+
+    &[data-variant='secondary'] {
+        color: var(--mantine-color-primary-8);
+    }
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--mantine-color-primary-3);
+
+        &[data-variant='secondary'] {
+            color: var(--mantine-color-primary-7);
+        }
+    }
+}
+
+.actionIcon {
+    &:hover {
+        border-color: var(--mantine-color-primary-5);
+    }
+}
+
+.alert {
+    background-color: var(--mantine-color-primary-5);
+
+    &[data-variant='danger'] {
+        background-color: var(--mantine-color-red-5) !important;
+    }
+}
+
+.alertMessage {
+    color: var(--mantine-color-dark-5);
+    text-align: left;
+}
+
+.drawerContent {
+    background-color: var(--bg-body-secondary);
+}
+
+.drawerHeader {
+    background-color: var(--bg-body-secondary);
+}
+
+.loader {
+    &:after {
+        border-color: var(--mantine-color-primary-5) var(--mantine-color-primary-5) var(--mantine-color-primary-5) transparent;
+    }
+}
+
+.paginationControl {
+    &[data-active='true'] {
+        background-color: var(--mantine-color-primary-5);
+        border-color: var(--mantine-color-primary-5);
+    }
+}
