@@ -8,8 +8,13 @@ import RegisterFormContainer from "@/components/Register/RegisterFormContainer";
 const Register = () => {
     return (
         <Box className={cx(utilClasses.container, classes.container)} data-overflow={true}>
-            <Backdrop/>
-            <RegisterFormContainer/>
+            <Backdrop />
+            <Box
+            className={classes.formContainer}
+                
+            >
+                <RegisterFormContainer />
+            </Box>
             <Circles/>
         </Box>
     );

@@ -24,7 +24,7 @@
 .page {
     width: 80%;
     flex-direction: column;
-
+    height: 100%;
     overflow: auto;
     padding-bottom: 32px;
     position: relative;

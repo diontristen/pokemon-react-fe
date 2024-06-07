@@ -38,7 +38,7 @@ export const usePokemon = (query: IPokemonQuery): IUseGetPokemon => {
                 if (!isEmpty(data?.total)) {
                     let totalPageCount: number = Number(data?.total) / Number(query.pageSize);
                     totalPageCount = Math.ceil(totalPageCount);
-                    setPagination(data?.total, total)
+                    setPagination(data?.total, totalPageCount)
                 }
             } catch (err) {
                 setError(err.message);

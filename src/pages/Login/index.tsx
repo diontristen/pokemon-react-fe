@@ -8,9 +8,13 @@ import Circles from "@/components/Backdrop/Circles";
 const Login = () => {
     return (
         <Box className={cx(utilClasses.container, classes.container)} data-overflow={true}>
-            <Backdrop/>
-            <Circles/>
-            <LoginFormContainer/>
+            <Backdrop />
+            <Circles />
+            <Box
+                className={classes.formContainer}
+            >
+                <LoginFormContainer />
+            </Box>
         </Box>
     );
 };
