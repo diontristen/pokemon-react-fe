@@ -19,12 +19,6 @@ const MENUS: ISidebarMenuItem[] = [
         name: 'Collection',
         link: PRIVATE_ROUTES.collection,
     },
-    {
-        key: 'settings',
-        icon: IconSettings,
-        name: 'Settings',
-        link: PRIVATE_ROUTES.settings,
-    }
 ]
 
 const SidebarMenu = () => {
