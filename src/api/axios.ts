@@ -5,7 +5,7 @@ const BASE_URL = '/api';
 const fetchClient = () => {
  
   const defaultOptions = {
-    baseURL: process.env.NODE_ENV === 'production' ? API : BASE_URL,
+    baseURL: process.env.NODE_ENV === 'production' ? API + BASE_URL : BASE_URL,
     withCredentials: true,
     headers: {
       'Content-Type': 'application/json',
